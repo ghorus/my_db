@@ -14,9 +14,13 @@
           #thing{
             border:1px solid black;
             border-radius: 25px;
+            max-width: 700px;
+            margin:20px 0px;
             padding:20px;
           }
+          #thing-info {display:flex;align-items: center;}
           input[type=checkbox] {margin:0px 20px 0px 0px;}
+          iframe{width:90%;height: 400px;}
         </style>
 </head>
 <body>
@@ -24,10 +28,21 @@
     <p>Projects. Project ideas. Web designs. Lessons learned. Etc.</p>
     <div id="thing">
         <h2>Software Engineering Path Bucket List</h2>
-        <div id="checkbox-container"><input type="checkbox"> <p>Publish a Steam game.</p></div>
-        <div id="checkbox-container"><input type="checkbox"> <p>Publish a mobile app.</p></div>
+        <div id="checkbox-container"><input type="checkbox"> <p>Publish a Steam game</p></div>
+        <div id="checkbox-container"><input type="checkbox"> <p>Publish a mobile app</p></div>
         <div id="checkbox-container"><input type="checkbox"> <p>Publish a Google Extension</p></div>
         <div id="checkbox-container"><input type="checkbox"> <p>Publish a Shopify Store Theme</p></div>
+    </div>
+    <div id="thing">
+        <h2>Every Web Design I've Ever Done</h2>
+    </div>
+    <div id="thing">
+        <h2>Project: Professional Videographer Portfolio Website</h2>
+        <iframe src="https://ghorus.github.io/tim/home.html"></iframe>
+        <div id="thing-info"><p><strong>Synopsis:</strong> A portfolio website for a good friend.</p></div>
+        <div id="thing-info"><p><strong>Interest:</strong> Practice Three.js to make an immersive 3D animated website. Potentially help a friend out with their business.</p></div>
+        <div id="thing-info"><p><strong>Impact:</strong> None yet.
+        </p></div>
     </div>
 </body>
 </html>
