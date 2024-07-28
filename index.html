@@ -21,6 +21,7 @@
           #thing-info {display:flex;align-items: center;}
           input[type=checkbox] {margin:0px 20px 0px 0px;}
           iframe{width:90%;height: 400px;}
+          #show-thing{display:flex;flex-direction: column;align-items: center;}
         </style>
 </head>
 <body>
@@ -38,11 +39,30 @@
     </div>
     <div id="thing">
         <h2>Project: Professional Videographer Portfolio Website</h2>
-        <iframe src="https://ghorus.github.io/tim/home.html"></iframe>
+        <div id="show-thing">
+            <button onclick="showIt(this)">Show</button>
+            <iframe data-src="https://ghorus.github.io/tim/home.html"></iframe>
+        </div>
         <div id="thing-info"><p><strong>Synopsis:</strong> A portfolio website for a good friend.</p></div>
         <div id="thing-info"><p><strong>Interest:</strong> Practice Three.js to make an immersive 3D animated website. Potentially help a friend out with their business.</p></div>
         <div id="thing-info"><p><strong>Impact:</strong> None yet.
         </p></div>
     </div>
+    <div id="thing">
+        <h2>Project Ideas</h2>
+        <ul>
+            <li>A game where you need to write code to control the player. i.e. You write code to shoot and move. Player learns to write code to navigate through files. Has basic code setup initially, like the player and environment.</li>
+        </ul>
+    </div>
+    <script>
+        function showIt(btn){
+            var nextSib = btn.nextElementSibling
+            if (nextSib.src){
+                nextSib.src=""
+            }
+            else{nextSib.src = nextSib.dataset.src}
+            
+        }
+    </script>
 </body>
 </html>
